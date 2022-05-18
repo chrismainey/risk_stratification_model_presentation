@@ -1,0 +1,78 @@
+---
+title: "Deputy Director Specialist Analytics Interview"
+subtitle: "Risk Stratification Tools"  
+author: 
+  - "Chris Mainey"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    seal: false
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+library(ragg)
+library(RefManageR)
+BibOptions(check.entries = FALSE, bib.style = "authoryear", style = "markdown",
+           dashed = TRUE, cite.style="authoryear", longnamesfirst=FALSE)
+
+#file.name <- system.file("Bib", "", package = "RefManageR")
+bib <- ReadBib("References.bib")
+
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE,
+  dev = "ragg_png"
+)
+```
+
+```{r R-Lang, echo=FALSE}
+# Choose the language at the beginning of your script or knit from external file
+lang <- c("EN", "FR")[1]
+```
+
+class: title-slide
+
+# Deputy Director Specialist Analytics Interview
+
+<br><br>
+
+### Risk Stratification Tools
+
+
+<br><br><br><br><br>
+
+### <img src="./assets/img/crop.png" alt="Mainard icon" height="40px" />  Dr Chris Mainey
+
+`r icons::icon_style(icons::fontawesome("twitter"), fill = "#005EB8")` [@chrismainey](https://twitter.com/chrismainey)
+`r icons::icon_style(icons::fontawesome("github"), fill = "#005EB8")` [chrismainey](https://github.com/chrismainey)
+`r icons::icon_style(icons::fontawesome("linkedin"), fill = "#005EB8")`  [chrismainey](https://www.linkedin.com/in/chrismainey/)
+`r icons::icon_style(icons::fontawesome("orcid"), fill = "#005EB8")` [0000-0002-3018-6171](https://orcid.org/0000-0002-3018-6171)
+`r icons::icon_style(icons::fontawesome("globe"), fill = "#005EB8")` [www.mainard.co.uk](https://www.mainard.co.uk)
+
+.footnote[Presentation and code available: **https://github.com/chrismainey/risk_stratification_model_presentation**]
+
+.art_cap[R generative art - inspired by Antonio Sánchez Chinchón - @aschinchon]
+
+
+???
+
+__End 30 seconds__!
+
+Say hi - introduce myself
+
+
+
+---
