@@ -1,13 +1,13 @@
 ---
-title: "Deputy Director Specialist Analytics Interview"
-subtitle: "Risk Stratification Tools"  
+title: "Risk Stratification Tools"
+subtitle: "Deputy Director Specialist Analytics Interview"  
 author: 
   - "Chris Mainey"
 date: '`r Sys.Date()`'
 output:
   xaringan::moon_reader:
     seal: false
-    css: xaringan-themer.css
+    css: theme.css
     nature:
       slideNumberFormat: "%current%"
       highlightStyle: github
@@ -45,17 +45,18 @@ lang <- c("EN", "FR")[1]
 
 class: title-slide
 
-# Deputy Director Specialist Analytics Interview
+# Risk Stratification Tools
 
 <br><br>
 
-### Risk Stratification Tools
+### Deputy Director Specialist Analytics Interview
 
 
 <br><br><br><br><br>
 
 ### <img src="./assets/img/crop.png" alt="Mainard icon" height="40px" />  Dr Chris Mainey
 
+`r icons::icon_style(icons::fontawesome("envelope"), fill = "#005EB8")` [c.mainey@nhs.net](mailto:c.mainey@nhs.net)
 `r icons::icon_style(icons::fontawesome("twitter"), fill = "#005EB8")` [@chrismainey](https://twitter.com/chrismainey)
 `r icons::icon_style(icons::fontawesome("github"), fill = "#005EB8")` [chrismainey](https://github.com/chrismainey)
 `r icons::icon_style(icons::fontawesome("linkedin"), fill = "#005EB8")`  [chrismainey](https://www.linkedin.com/in/chrismainey/)
@@ -76,3 +77,35 @@ Say hi - introduce myself
 
 
 ---
+class: inverse center middle
+
+## How risk stratification models could be used to improve health outcomes in the NHS
+---
+
+
+---
+class: inverse center middle
+
+## How to evaluate whether the risk stratification model(s) are reliably predicting population vs. individual risks
+---
+
+### Population
+
+Class imbalance: under-represented groups
++ Example of 
+
+### Individual
+
+
+---
+class: inverse center middle
+
+## Considerations for deployment of risk stratification models across a complex health and care system
+
+---
+
+- Context
+- Validation
+- Monitoring
+- Review
+- Communication

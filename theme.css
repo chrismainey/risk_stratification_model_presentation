@@ -43,23 +43,27 @@
   --header-h3-font-size: 1.75rem;
 
   /* Colors */
-  --text-color: #FEFDFD;
-  --header-color: #F97B64;
-  --background-color: #1F4257;
-  --link-color: #F97B64;
-  --text-bold-color: #F97B64;
+ --text-color: #212B32;
+  --header-color: #005EB8;;
+  --background-color: #F0F4F5;
+  --link-color: #0072CE;
+  --text-bold-color: #E8EDEE;
   --code-highlight-color: rgba(255,255,0,0.5);
-  --inverse-text-color: #1F4257;
-  --inverse-background-color: #F97B64;
-  --inverse-header-color: #1F4257;
-  --inverse-link-color: #F97B64;
-  --title-slide-background-color: #1F4257;
-  --title-slide-text-color: #F97B64;
-  --header-background-color: #F97B64;
-  --header-background-text-color: #1F4257;
-  --primary: #1F4257;
-  --secondary: #F97B64;
+  --inverse-text-color: #FFFFFF;
+  --inverse-background-color: #005EB8;
+  --inverse-header-color: #FFFFFF;
+  --inverse-link-color: #E8EDEE;
+  --title-slide-background-color: #FFFFFF;
+  --title-slide-text-color: #005EB8;;
+  --header-background-color: #E8EDEE;
+  --header-background-text-color: #000000;
+  --primary: #E8EDEE;
+  --secondary: #005EB8;
+  --white: #FFFFFF;
+  --black: #231f20;
 }
+
+ 
 
 html {
   font-size: var(--base-font-size);
@@ -135,12 +139,16 @@ a, a > code {
 .inverse a, .inverse a > code {
   color: var(--inverse-link-color);
 }
-.title-slide, .title-slide h1, .title-slide h2, .title-slide h3 {
+.title-slide, .title-slide h1 {
   color: var(--title-slide-text-color);
 }
 
+.title-slide h2{
+  color:  "#768692";
+}
+
 .title-slide h3{
-  color: var(--title-slide-text-color);
+  color: #768692;
   margin: 35px, 0
 }
 
@@ -171,6 +179,8 @@ a, a > code {
   right: 8%;
   padding-right: 4em;
   font-size: 0.5em;
+  font-style: italic;
+  
 }
 
 .references p {
