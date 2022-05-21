@@ -19,8 +19,8 @@ output:
 ```{r setup, include=FALSE}
 library(ragg)
 library(RefManageR)
-BibOptions(check.entries = FALSE, bib.style = "authoryear", style = "markdown",
-           dashed = TRUE, cite.style="authoryear", longnamesfirst=FALSE)
+BibOptions(check.entries = FALSE, bib.style = "authoryear", style = "text",
+           dashed = FALSE, cite.style="authoryear", longnamesfirst=FALSE)
 
 #file.name <- system.file("Bib", "", package = "RefManageR")
 bib <- ReadBib("References.bib")
@@ -82,6 +82,27 @@ class: inverse center middle
 ## How risk stratification models could be used to improve health outcomes in the NHS
 ---
 
+## What is risk-stratification?
++ Stratification (grouping or sorting) of population according to the risk of an event, usually determined by expert opinion, rule sets or statistical estimation of frequency based on correlated predictors.
+
+--
+
+### Benefits for health outcomes
+
++ Quantified individual risk can allow for more personalised care in many settings
+
+--
+
++ Understanding distribution of needs
+  + Commissioning the right sized services to meet needs
+  + Planning and delivering service in a way that is accessible or appropriate to the population
+
+--
+
++ Monitoring: 
+  + Allow closer monitoring of high risk patients (e.g. diabetes patients and foot-care).
+  + Change in risk can itself be a trigger for intervention
+  + Quality / Outcome monitoring
 
 ---
 class: inverse center middle
@@ -89,13 +110,28 @@ class: inverse center middle
 ## How to evaluate whether the risk stratification model(s) are reliably predicting population vs. individual risks
 ---
 
-### Population
+> _"...Since all models are wrong the scientist must be alert to what is importantly wrong. It is inappropriate to be concerned about mice when there are tigers abroad..."_ `r Citep(bib, "Box1")`
 
-Class imbalance: under-represented groups
-+ Example of 
+--
 
-### Individual
+### Assessing models
 
++ Models generally built for global accuracy (may or may not be population)
+
++ Understanding metrics:
+  + AUC / R<sup>2</sup> global proportion of variance explained
+  + MSE / RMSE / MAE - average errors per observation
+  
+--
+
+### Validation in the population
+
++ Sub-group / marginal analysis
+  + Understand where fit is poor
+  + Class imbalance
+  
++ Population weighting to assess fit e.g.`r Citep(bib, "vanaltenReweightingUKBiobank2022")`
+  
 
 ---
 class: inverse center middle
@@ -104,8 +140,64 @@ class: inverse center middle
 
 ---
 
-- Context
-- Validation
-- Monitoring
-- Review
-- Communication
+> _"...The right balance between productivity and equity is a value judgement. The decision will 
+rest with ICBs, but a sensible one will engage with its population, their representatives 
+and its staff and explore the trade-offs they may be willing to make..."_ `r Citep(bib, "Wyatt1")`
+
+.pull-left[
+### Context
+Awareness system you are working in and limitations
+
+
+### Validation
++ Is this appropriate for your specific population / system?
++ Has it been tested in you population?
+]
+
+.pull-right[
+### Monitoring
+
++ Change of usecase, e.g.:
+  + Charlson score `r Citep(bib, "charlsonNewMethodClassifying1987")`
+  + NEWS2 for COVID-19 patients `r Citep(bib, "carrEvaluationImprovementNational2021")`
++ Model drift / retraining
++ Interaction with other metrics
+
+
+
+### Communication / engagement
+
++ Stakeholder engagement
++ Model, scope and limitations clear?
++ How can you take feedback?
+
+]
+
+---
+class: inverse center middle
+.pull-left[
+<img src="https://imgs.xkcd.com/comics/curve_fitting.png" alt="XKCD Curve-fitting" height="600px" />
+]
+
+.pull-right[
+
+
+
+
+
+
+__Source:__ xkcd: A webcomic of romance, sarcasm, math, and language
+
+'Curve-Fitting Methods and the messages they send'
+
+https://xkcd.com/2048/
+]
+
+---
+class: references
+
+### References
+
+```{r, results='asis', echo=FALSE}
+PrintBibliography(bib)
+```

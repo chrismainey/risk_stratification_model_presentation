@@ -47,7 +47,7 @@
   --header-color: #005EB8;;
   --background-color: #F0F4F5;
   --link-color: #0072CE;
-  --text-bold-color: #E8EDEE;
+  --text-bold-color: #212B32;
   --code-highlight-color: rgba(255,255,0,0.5);
   --inverse-text-color: #FFFFFF;
   --inverse-background-color: #005EB8;
@@ -125,6 +125,7 @@ a, a > code {
   padding-right: 4em;
   font-size: 0.9em;
 }
+
 .remark-code-line-highlighted {
   background-color: var(--code-highlight-color);
 }
@@ -184,8 +185,8 @@ a, a > code {
 }
 
 .references p {
-  line-height: 18px;
-  font-size: 12pt;
+  line-height: 22px;
+  font-size: 14pt;
   padding:0;
   margin:6px;
 }
@@ -224,6 +225,9 @@ img, video, iframe {
 blockquote {
   border-left: solid 5px #F97B6480;
   padding-left: 1em;
+  line-height: 30px;
+  background-color: #E8EDEE;
+  font-size: 16pt;
 }
 .remark-slide table {
   margin: auto;
