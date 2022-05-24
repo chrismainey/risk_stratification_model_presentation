@@ -94,12 +94,13 @@ How you think risk stratification models could be used to improve health outcome
 + Stratification (grouping or sorting) of population according to the risk of an event, usually determined by expert opinion, rule sets or statistical estimation of frequency based on correlated predictors.
 
 ???
-
 These tools use relationships in historic population data to estimate the use of 
 health care services for each member of a population. Risk stratification tools can be useful both 
 for population planning purposes (known as “risk stratification for commissioning”) and for 
 identifying which patients should be offered targeted, preventive support (known as “risk 
 stratification for case finding”).
+
+
 
 --
 
@@ -173,9 +174,12 @@ and its staff and explore the trade-offs they may be willing to make..."_ `r Cit
 
 .pull-left[
 ### Context
-Awareness system you are working in and limitations
++ Awareness system you are working in and limitations
++ e.g. National VTE risk scoring
+  + Built for Acute providers
+  + How do we use it in mental health settings.
 
-
+<br><br>
 ### Validation
 + Is this appropriate for your specific population / system?
 + Has it been tested in you population?
@@ -208,7 +212,7 @@ class: inverse center middle
 
 .pull-right[
 
-
+<br><br><br><br><br><br>
 
 
 
