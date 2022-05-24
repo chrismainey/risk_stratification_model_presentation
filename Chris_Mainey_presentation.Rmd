@@ -74,12 +74,20 @@ __End 30 seconds__!
 
 Say hi - introduce myself
 
+???
+Presentation on github with references and code, share afterwards
 
 
 ---
 class: inverse center middle
 
 ## How risk stratification models could be used to improve health outcomes in the NHS
+
+
+???
+
+How you think risk stratification models could be used to improve health outcomes in the NHS
+
 ---
 
 ## What is risk-stratification?
@@ -108,6 +116,12 @@ class: inverse center middle
 class: inverse center middle
 
 ## How to evaluate whether the risk stratification model(s) are reliably predicting population vs. individual risks
+
+???
+
+How you would evaluate whether the risk stratification model(s) was reliably predicting population vs. individual risks
+
+
 ---
 
 > _"...Since all models are wrong the scientist must be alert to what is importantly wrong. It is inappropriate to be concerned about mice when there are tigers abroad..."_ `r Citep(bib, "Box1")`
@@ -130,13 +144,17 @@ class: inverse center middle
   + Understand where fit is poor
   + Class imbalance
   
-+ Population weighting to assess fit e.g.`r Citep(bib, "vanaltenReweightingUKBiobank2022")`
++ Population weighting to assess fit e.g.`r Citep(bib, "vanaltenReweightingUKBiobank2022", .opts = list(max.names=2))`
   
 
 ---
 class: inverse center middle
 
 ## Considerations for deployment of risk stratification models across a complex health and care system
+
+
+???
+Considerations for deployment of risk stratification models across a complex health and care system
 
 ---
 
@@ -158,8 +176,8 @@ Awareness system you are working in and limitations
 ### Monitoring
 
 + Change of usecase, e.g.:
-  + Charlson score `r Citep(bib, "charlsonNewMethodClassifying1987")`
-  + NEWS2 for COVID-19 patients `r Citep(bib, "carrEvaluationImprovementNational2021")`
+  + Charlson score `r Citep(bib, "charlsonNewMethodClassifying1987", .opts = list(max.names=2))`
+  + NEWS2 for COVID-19 patients `r Citep(bib, "carrEvaluationImprovementNational2021", .opts = list(max.names=2))`
 + Model drift / retraining
 + Interaction with other metrics
 
