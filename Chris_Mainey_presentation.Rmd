@@ -94,14 +94,6 @@ How you think risk stratification models could be used to improve health outcome
 + Stratification (grouping or sorting) of population according to the risk of an event, usually determined by expert opinion, rule sets or statistical estimation of frequency based on correlated predictors.
 
 --
-???
-
-These tools use relationships in historic population data to estimate the use of 
-health care services for each member of a population. Risk stratification tools can be useful both 
-for population planning purposes (known as “risk stratification for commissioning”) and for 
-identifying which patients should be offered targeted, preventive support (known as “risk 
-stratification for case finding”).
-
 
 ### Benefits for health outcomes
 
@@ -119,6 +111,15 @@ stratification for case finding”).
   + Allow closer monitoring of high risk patients (e.g. diabetes patients and foot-care).
   + Change in risk can itself be a trigger for intervention
   + Quality / Outcome monitoring
+
+???
+
+These tools use relationships in historic population data to estimate the use of 
+health care services for each member of a population. Risk stratification tools can be useful both 
+for population planning purposes (known as “risk stratification for commissioning”) and for 
+identifying which patients should be offered targeted, preventive support (known as “risk 
+stratification for case finding”).
+
 
 ---
 class: inverse center middle
